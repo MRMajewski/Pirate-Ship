@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera.cs" />
+     <Compile Include="Assets\Scripts\Cannonball.cs" />
      <Compile Include="Assets\Scripts\CannonBallShooter.cs" />
      <Compile Include="Assets\Scripts\Ship.cs" />
  <Reference Include="UnityEngine.UI">

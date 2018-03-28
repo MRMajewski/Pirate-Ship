@@ -46,7 +46,7 @@ public class Ship : MonoBehaviour {
 
         CurrentAngle = Mathf.Lerp(CurrentAngle, targetAngle, Time.deltaTime/2f);
 
-        Debug.Log(CurrentAngle);
+        //Debug.Log(CurrentAngle);
 
 
         // poruszanie się
