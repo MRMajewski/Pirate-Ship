@@ -1,5 +1,4 @@
 sceneSetups:
-- path: E:/IT/Unity/materialy_do_kursu/Materialy/Projekty gier/Pirate Ship/Pirate
-    Ship/Assets/scenes/game.unity
+- path: Assets/Scenes/PirateShip.unity
   isLoaded: 1
   isActive: 1

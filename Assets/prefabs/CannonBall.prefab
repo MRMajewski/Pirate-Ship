@@ -111,6 +111,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c0323c053972054ba0c00a8a709da15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WaterSplash: {fileID: 1797028676862334, guid: ff4e87bdd8560bc468ed4e0a6387785a,
+    type: 2}
+  TerrainSplash: {fileID: 1797414845294960, guid: 9b7e75642651fc6409c221291bbb2e95,
+    type: 2}
 --- !u!135 &135137525312302342
 SphereCollider:
   m_ObjectHideFlags: 1

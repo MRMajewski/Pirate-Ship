@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Cannonball : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public GameObject WaterSplash;
+    public GameObject TerrainSplash;
+
+    // Use this for initialization
+    void Start () {
 
         Destroy(gameObject, 10f);
 
@@ -15,10 +18,23 @@ public class Cannonball : MonoBehaviour {
     private void OnCollisionEnter (Collision collision ) {
 
         var layerID = collision.collider.gameObject.layer;
-
         var layerName = LayerMask.LayerToName(layerID);
 
-        Debug.Log(layerName);
-      
-	}
+        GameObject particleObject = null;
+
+        if (layerName == "Water")
+            particleObject = WaterSplash;
+
+        if (layerName == "Terrain")
+            particleObject = TerrainSplash;
+
+        var position = collision.contacts[0].point;
+
+        Instantiate(particleObject, position, Quaternion.identity);
+
+        Destroy(gameObject);
+
+
+
+    }
 }
